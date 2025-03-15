@@ -85,7 +85,7 @@ def student_scores(positional, **kwargs):
 
 # Task 8
 def titleize(string):
-    little_words = ["a", "on", "an", "the", "of", "and", "is", "in"]
+    little_words = {"a", "on", "an", "the", "of", "and", "is", "in"}
     words = string.split()
     for i, word in enumerate(words):
         if i == 0 or i == len(words) - 1 or word not in little_words:
