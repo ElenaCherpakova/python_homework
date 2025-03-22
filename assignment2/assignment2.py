@@ -148,7 +148,7 @@ minutes_list = create_minutes_list()
 # Task 15
 def write_sorted_list():
     sorted_by_datetime = sorted(minutes_list, key=lambda row: row[1])
-    result_list = list(map(lambda row: (row[0], datetime.strftime(row[1], "%B %d, %Y")), sorted_by_datetime))
+    result_list = list(map(lambda row: (row[0], datetime.strftime(row[1], "%B %d, %Y").replace(" 0", " ")), sorted_by_datetime))
     try:
         with open('./minutes.csv', 'w', newline='') as file:
             writer = csv.writer(file)
