@@ -9,7 +9,7 @@ To use this repository:
 3. Change to the python_homework directory you just cloned.  Enter the following commands:
 ```shell
 # if you use ssh authentication:
-git remote set-url origin git@github.com/your-github-id/python_homework.git
+git remote set-url origin git@github.com:your-github-id/python_homework.git
 # if you use token based authentication:
 git remote set-url origin https://github.com/your-github-id/python_homework
 
