@@ -49,7 +49,7 @@ employee_shape = more_employees.shape
 # print(employee_shape)
 
 # 3.4 Use the info() method:
-# more_employees.info()
+more_employees.info()
 
 # Task 4
 # 4.1 Create a DataFrame from dirty_data.csv file and assign it to the variable dirty_data.
