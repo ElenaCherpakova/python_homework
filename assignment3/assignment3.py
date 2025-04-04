@@ -59,7 +59,7 @@ clean_data = dirty_data.copy()
 
 # 4.2 Remove any duplicate rows from the DataFrame
 clean_data.drop_duplicates(inplace=True)
-# print(clean_data)
+print(clean_data)
 
 # 4.3 Convert Age to numeric and handle missing values
 clean_data['Age'] = pd.to_numeric(clean_data['Age'], errors='coerce')
@@ -77,12 +77,14 @@ clean_data['Age'] = clean_data['Age'].fillna(mean_age)
 median_salary = clean_data['Salary'].median()
 clean_data['Salary'] = clean_data['Salary'].fillna(median_salary)
 # print("\nAfter filling missing values:")
-print(clean_data)
+# print(clean_data)
 
 # 4.6 Convert Hire Date to datetime
-clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], errors='coerce')
+clean_data['Hire Date'] = pd.to_datetime(clean_data['Hire Date'], errors='coerce', format='mixed')
+nat_count = clean_data['Hire Date'].isna().sum()
 print("\nAfter converting to datetime:")
 print(clean_data)
+print(f"Number of NaT values: {nat_count}")
 
 # 4.7 Strip extra whitespace and standardize Name and Department as uppercase
 clean_data['Name'] = clean_data['Name'].str.strip().str.upper()
