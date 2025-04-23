@@ -109,7 +109,7 @@ try:
             magazine_id INTEGER NOT NULL,
             expiration_date TEXT NOT NULL,
             FOREIGN KEY (subscriber_id) REFERENCES Subscribers(subscriber_id),
-            FOREIGN KEY (magazine_id) REFERENCES Magazines(magazine_id)
+            FOREIGN KEY (magazine_id) REFERENCES Magazines(magazine_id),
             UNIQUE (subscriber_id, magazine_id)
         )
         """)
