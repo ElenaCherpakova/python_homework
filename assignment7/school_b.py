@@ -34,13 +34,13 @@ def enroll_student(cursor, student, course):
         print(f"There was no course named {course}.")
         return
     cursor.execute(
-        "INSERT INTO Enrollments (student_id, course_id) VALUES (?, ?)", (student_id, course_id))
-    cursor.execute(
         "SELECT * FROM Enrollments WHERE student_id = ? AND course_id = ?", (student_id, course_id))
     results = cursor.fetchall()
     if len(results) > 0:
         print(f"Student {student} is already enrolled in course {course}.")
         return
+    cursor.execute(
+        "INSERT INTO Enrollments (student_id, course_id) VALUES (?, ?)", (student_id, course_id))
 
 with sqlite3.connect('../db/school.db') as conn:
     # This turns on the foreign key constraint
@@ -90,6 +90,7 @@ with sqlite3.connect('../db/school.db') as conn:
         print(row)
         
     cursor.execute("UPDATE Students SET name='Charles', age=20 WHERE name ='Charlie'")
-    results = cursor.fetchall()
-    for row in results:
-        print(row)
+    if cursor.rowcount > 0:
+        print("Student 'Charlie' was successfully updated to 'Charles'.")
+    else:
+        print("No student named 'Charlie' was found to update.")

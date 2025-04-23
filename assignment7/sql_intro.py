@@ -130,7 +130,6 @@ try:
         add_subscriber(cursor, 'Elena', '456 Elm St')
         add_subscriber(cursor, 'Bob', '456 Elm St')
         add_subscriber(cursor, 'Daniel', '789 Oak St')
-        add_subscriber(cursor, 'Elena', '123 Main St')
         add_subscriber(cursor, 'Mike', '123 Street St')
 
         add_subscription(cursor, 'Elena', 'Time')
