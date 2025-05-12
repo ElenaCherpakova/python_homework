@@ -37,7 +37,7 @@ def scraper(page_count, query):
             author_elements = li.find_elements(
                 By.CSS_SELECTOR, 'a.author-link')
             author = '; '.join([author.text.strip()
-                               for author in author_elements])
+                               for author in author_elements]) if author_elements else 'Unknown'
             format_info = li.find_element(
                 By.CSS_SELECTOR, 'div.cp-format-info span.display-info-primary').text
             format, year = format_info.split(' | ')[0].split(' - ')
