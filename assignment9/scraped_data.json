@@ -1,0 +1,80 @@
+{
+    "links": [
+        {
+            "name": "Archive.today",
+            "url": "https://en.wikipedia.org/wiki/Archive.today"
+        },
+        {
+            "name": "Comparison of feed aggregators",
+            "url": "https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators"
+        },
+        {
+            "name": "Data scraping",
+            "url": "https://en.wikipedia.org/wiki/Data_scraping"
+        },
+        {
+            "name": "Data wrangling",
+            "url": "https://en.wikipedia.org/wiki/Data_wrangling"
+        },
+        {
+            "name": "Importer",
+            "url": "https://en.wikipedia.org/wiki/Importer_(computing)"
+        },
+        {
+            "name": "Job wrapping",
+            "url": "https://en.wikipedia.org/wiki/Job_wrapping"
+        },
+        {
+            "name": "Knowledge extraction",
+            "url": "https://en.wikipedia.org/wiki/Knowledge_extraction"
+        },
+        {
+            "name": "OpenSocial",
+            "url": "https://en.wikipedia.org/wiki/OpenSocial"
+        },
+        {
+            "name": "Scraper site",
+            "url": "https://en.wikipedia.org/wiki/Scraper_site"
+        },
+        {
+            "name": "Fake news website",
+            "url": "https://en.wikipedia.org/wiki/Fake_news_website"
+        },
+        {
+            "name": "Spamdexing",
+            "url": "https://en.wikipedia.org/wiki/Spamdexing"
+        },
+        {
+            "name": "Domain name drop list",
+            "url": "https://en.wikipedia.org/wiki/Domain_name_drop_list"
+        },
+        {
+            "name": "Text corpus",
+            "url": "https://en.wikipedia.org/wiki/Text_corpus"
+        },
+        {
+            "name": "Web archiving",
+            "url": "https://en.wikipedia.org/wiki/Web_archiving"
+        },
+        {
+            "name": "Web crawler",
+            "url": "https://en.wikipedia.org/wiki/Web_crawler"
+        },
+        {
+            "name": "Offline reader",
+            "url": "https://en.wikipedia.org/wiki/Offline_reader"
+        },
+        {
+            "name": "Link farm",
+            "url": "https://en.wikipedia.org/wiki/Link_farm"
+        },
+        {
+            "name": "Search engine scraping",
+            "url": "https://en.wikipedia.org/wiki/Search_engine_scraping"
+        },
+        {
+            "name": "Web crawlers",
+            "url": "https://en.wikipedia.org/wiki/Category:Web_crawlers"
+        }
+    ]
+}
