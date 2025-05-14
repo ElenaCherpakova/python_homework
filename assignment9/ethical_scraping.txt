@@ -1,0 +1,15 @@
+Which sections of the website are restricted for crawling?
+- The root directory (/) for specific misbehaving or aggressive user agents.
+- Dynamically generated pages and most API endpoints (/w/, /api/, /trap/, /wiki/Special:* and equivalents, except for specific allowed API paths).
+- Numerous administrative and discussion pages across different language Wikipedias related to deletion, blocking, copyright, requests, noticeboards, etc.
+- Specific sections of sister projects like Wikinews and Wikiquote.
+- Older fundraising comment pages
+
+Are there specific rules for certain user agents?
+- Several user agents (e.g., MJ12bot, HTTrack, wget) are explicitly disallowed from crawling the entire site with "Disallow: /".
+- Advertising-related bots (Mediapartners-Google*) are also disallowed from the entire site.
+- Wikipedia's own work bots (IsraBot, Orthogaffe) are allowed to crawl everything (no Disallow).
+
+Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose and how it promotes ethical scraping.
+Websites implement robots.txt to instruct web crawlers on which parts of their site they should not access, primarily to manage server load and prevent crawling of non-essential or private areas.
+This file fosters ethical scraping by setting explicit boundaries for automated access, allowing responsible bots to respect the website's resources and avoid causing performance issues or accessing unintended content. By adhering to these guidelines, bot operators demonstrate good faith and contribute to a healthier web ecosystem.
